@@ -1,0 +1,28 @@
+Il tipo di dato astratto CD coda doppia è definito dalla seguente interfaccia Java:
+
+public interface CD
+{ int size();
+boolean isEmpty();
+void addFirst (Object x); // aggiunge all'inizio della coda
+void addLast (Object x); // aggiunge alla fine della coda
+Object removeFirst () throws EmptyCDException; // toglie dall'inizio
+Object removeLast () throws EmptyCDException; // toglie dalla fine
+Object getFirst () throws EmptyCDException; // elemento all'inizio
+Object getLast () throws EmptyCDException; // elemento alla fine
+}
+Scrivere la classe MiaCD che realizza l'interfaccia CD in modo che tutte le primitive richiedano un tempo O(1) oppure un tempo O(1) in termini di analisi ammortizzata.
+Scrivere una classe Main di prova che:
+– crei tre esemplari della classe MiaCD di nome uno, due e tre
+– legga dall'ingresso standard una sequenza di numeri interi (uno per riga), li inserisca alla fine della coda uno, svuoti la coda uno dalla fine (con removeLast) trasferendone il contenuto all'inizio della coda due, svuoti la coda due dall'inizio (con removeFirst) inserendo i dati alla fine della coda tre, svuoti infine la coda tre dall'inizio scrivendo i dati sull'uscita standard, uno per riga. I dati in uscita dovranno essere nello stesso ordine dei dati in ingresso.
+Il candidato ha a disposizione i file:
+– CD.java l'interfaccia Java che definisce la coda doppia
+
+Al termine della prova il candidato dovrà lasciare nella sua home i file
+– MiaCD.java la realizzazione della coda doppia
+– Main.java l'applicazione per il collaudo della classe MiaCD.java
+– EmptyCDException.java il gestore delle eccezioni.
+Ogni file .java prodotto dal candidato dovrà contenere come prima riga un commento con cognome e nome del candidato, numero di matricola, numero della postazione di lavoro, data.
+Appunti
+MiaCD    
+Main  
+EmptyCDException
